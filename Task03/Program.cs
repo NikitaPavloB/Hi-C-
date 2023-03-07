@@ -3,7 +3,7 @@
 // 3 -> Среда
 // 5 -> Пятница
 
-Console.WriteLine("Введите номер дня недели");
+Console.WriteLine("Введите номер дня недели:");
 
 string day = Console.ReadLine();
 if(day == "1")
