@@ -11,6 +11,7 @@ Console.WriteLine("Введите второе число:");
 int number2 = Convert.ToInt32(Console.ReadLine());
 
 int result = RemainderDivision(number1, number2);
+// Console.WriteLine(result == 0 ? "кратно" : $"не кратно, остаток {result}" );
 
 if (result == 0)
   Console.WriteLine("Кратно");
