@@ -17,28 +17,28 @@ PrintArray(randomArray);
 
 bool IsPresent(int[] arr, int number)
 {
-    for (int i = 0; i < arr.Length; i++)
-    {
-        if(arr[i] == number) return true;
-    }
+  for (int i = 0; i < arr.Length; i++)
+  {
+    if (arr[i] == number) return true;
+  }
 
-    return false;
+  return false;
 }
 
 int[] CreateArrayRndInt(int size, int min, int max)
 {
-    int[] array = new int[size];
-    Random random = new Random();
+  int[] array = new int[size];
+  Random random = new Random();
 
-    for(int i = 0; i < array.Length; i++)
-    {
-        array[i] = random.Next(min, max +1);
-    }
+  for (int i = 0; i < array.Length; i++)
+  {
+    array[i] = random.Next(min, max + 1);
+  }
 
-    return array;
+  return array;
 }
 
 void PrintArray(int[] arr)
 {
-    Console.WriteLine("[{0}]", string.Join(", ", arr));
+  Console.WriteLine("[{0}]", string.Join(", ", arr));
 }
