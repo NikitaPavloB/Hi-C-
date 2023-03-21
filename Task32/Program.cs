@@ -18,26 +18,26 @@ PrintArray(arrayElements);
 
 void ConvertElementsToArray(int[] array)
 {
-    for (int i = 0; i < array.Length; i++)
-    {  
-        array[i] = array[i] * -1;
-    }
+  for (int i = 0; i < array.Length; i++)
+  {
+    array[i] = array[i] * -1;
+  }
 }
 
 int[] CreateArrayRndInt(int size, int min, int max)
 {
-    int[] array = new int[size];
-    Random random = new Random();
+  int[] array = new int[size];
+  Random random = new Random();
 
-    for(int i = 0; i < array.Length; i++)
-    {
-        array[i] = random.Next(min, max +1);
-    }
+  for (int i = 0; i < array.Length; i++)
+  {
+    array[i] = random.Next(min, max + 1);
+  }
 
-    return array;
+  return array;
 }
 
 void PrintArray(int[] arr)
 {
-    Console.WriteLine("[{0}]", string.Join(", ", arr));
+  Console.WriteLine("[{0}]", string.Join(", ", arr));
 }
