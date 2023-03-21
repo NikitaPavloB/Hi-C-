@@ -9,10 +9,10 @@ Console.Write("Введите размер массива: ");
 
 int arraySize = Convert.ToInt32(Console.ReadLine());
 
-if(arraySize <= 0)
+if (arraySize <= 0)
 {
-    Console.WriteLine($"Ошибка: введено неверное значение {arraySize}");
-    return;
+  Console.WriteLine($"Ошибка: введено неверное значение {arraySize}");
+  return;
 }
 
 int[] arr = CreateArray(arraySize);
@@ -21,22 +21,22 @@ PrintArray(arr);
 
 int[] CreateArray(int arrayLength)
 {
-    int[] newArray = new int[arrayLength];
-    
-    Random random = new Random();
+  int[] newArray = new int[arrayLength];
 
-    for(int i = 0; i < arrayLength; i++)
-    {
-        newArray[i] = random.Next(0, 2);
-    }
+  Random random = new Random();
 
-    return newArray;
+  for (int i = 0; i < arrayLength; i++)
+  {
+    newArray[i] = random.Next(0, 2);
+  }
+
+  return newArray;
 }
 
 void PrintArray(int[] array)
 {
-    for(int i = 0; i < array.Length; i++)
-    {
-        Console.Write($"{array[i]} ");
-    }
+  for (int i = 0; i < array.Length; i++)
+  {
+    Console.Write($"{array[i]} ");
+  }
 }
